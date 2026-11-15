@@ -1,0 +1,36 @@
+{
+  "name": "datacircle/llphant-tools",
+  "description": "Find the best GTM APIs, in LLPhant: four tools on Datacircle's open API, no key.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://datacircle.dev",
+  "keywords": ["llphant", "tools", "function-calling", "api", "gtm", "datacircle"],
+  "authors": [{"name": "Wayne Hamadi", "email": "wayne@datacircle.dev", "homepage": "https://datacircle.dev"}],
+  "support": {
+    "issues": "https://github.com/waynehamadi/llphant-datacircle/issues",
+    "source": "https://github.com/waynehamadi/llphant-datacircle",
+    "docs": "https://datacircle.dev/api"
+  },
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^7.4.5",
+    "guzzlehttp/psr7": "^2.4",
+    "psr/http-client": "^1.0",
+    "theodo-group/llphant": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5|^11.0|^12.0"
+  },
+  "autoload": {
+    "psr-4": {"Datacircle\\LLPhant\\": "src/"}
+  },
+  "autoload-dev": {
+    "psr-4": {"Datacircle\\LLPhant\\Tests\\": "tests/"}
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
